@@ -1,11 +1,11 @@
-######################################################################
-## 																	##
+##########################################################################
+## 									##								##
 ## This script is used to check an uncompressed OVA/OVF set of 	   	##
-## 	files against the included manifest (SHA1 or SHA256)			##
-##																	##
-## Created by - Tom Wnukowski - 2017-Aug-11							##
-##																	##
-######################################################################
+## 	files against the included manifest (SHA1 or SHA256)		##
+##									##								##
+## Created by - Motonuke - 2017-Aug-11					##
+##									##								##
+##########################################################################
 
 
 ## Setting environment
