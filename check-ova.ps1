@@ -50,8 +50,6 @@ $alg = $file[0]
 # write-host "Stored Hash is "$hash""
 # write-host "Algorithm is "$alg""
 
-
-
 ## checking if file exists
 $filecheck = test-path "$path$filename"
 if ($filecheck) {
