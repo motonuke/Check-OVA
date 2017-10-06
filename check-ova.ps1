@@ -72,5 +72,5 @@ if ($error -gt 0) {write-host "`nFile Verification errors found, there are eithe
 if ($error -eq 0) {write-host "`nAll files passed verification, the OVA/OVF is safe to import`n" -f green}
 write-host "=========================================================================="
 $elapsedTime = $(get-date) - $script:StartTime
-write-host "`n$scriptname took"$elapsedTime.Minutes"Minutes and"$elapsedTime.Seconds"Seconds to complete.`n" @fggreen
+write-host "`n$scriptname took"$elapsedTime.Minutes"Minutes and"$elapsedTime.Seconds"Seconds to complete.`n" -f green
 write-host "=========================================================================="
