@@ -1,11 +1,11 @@
 ######################################################################
-## 																	##
-## This script is used to check an uncompressed OVA/OVF set of 	   	##
-## 	files against the included manifest (SHA1 or SHA256)			##
-##																	##
-## Created by -motonuke - 2017-Aug-11								##
-## Updated 2017-Oct-11 - Added Recursive option						##
-##																	##
+## 								    ##
+## This script is used to check an uncompressed OVA/OVF set of 	    ##
+## 	files against the included manifest (SHA1 or SHA256)        ##
+##								    ##
+## Created by -motonuke - 2017-Aug-11				    ##
+## Updated 2017-Oct-11 - Added Recursive option	    		    ##
+##								    ##
 ######################################################################
 
 
