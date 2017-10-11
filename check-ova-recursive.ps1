@@ -3,7 +3,7 @@
 ## This script is used to check an uncompressed OVA/OVF set of 	   	##
 ## 	files against the included manifest (SHA1 or SHA256)			##
 ##																	##
-## Created by - Tom Wnukowski - 2017-Aug-11							##
+## Created by - motonuke - 2017-Aug-11							##
 ## Updated 2017-Oct-11 - Added Recursive option						##
 ##																	##
 ######################################################################
@@ -85,6 +85,6 @@ if ($error -eq 0) {write-host "`nAll files passed verification, the OVA/OVF loca
 write-host "=========================================================================="
 }
 $elapsedTime = $(get-date) - $script:StartTime
-write-host "`n$scriptname took"$elapsedTime.Minutes"Minutes and"$elapsedTime.Seconds"Seconds to complete.`n" @fggreen
+write-host "`n$scriptname took"$elapsedTime.Minutes"Minutes and"$elapsedTime.Seconds"Seconds to complete.`n" -f green
 write-host "=========================================================================="
 
