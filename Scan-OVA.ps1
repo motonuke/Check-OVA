@@ -133,11 +133,12 @@ function Scan-OVA {
 
             #Test for file
             if(Test-Path $VerifyPath) {
-
-	            $Check = Get-FileHash -Path $VerifyPath -Algorithm $Alg -ErrorAction SilentlyContinue
+	    
+		$FileSize = ((Get-ItemProperty -Path $VerifyPath).Length / 1GB)    
+	        $Check = Get-FileHash -Path $VerifyPath -Algorithm $Alg -ErrorAction SilentlyContinue
 
                 #Check hash matching
-	            if($Check.Hash -eq $Hash) {
+	        if($Check.Hash -eq $Hash) {
  
                     "Pass"
                 } 
@@ -178,6 +179,7 @@ function Scan-OVA {
         [PSCustomObject] @{
         
             Filename="$Filename"
+	    Size="$FileSize GB"
             HashVerification="$Verification"
             TimeElapsed="$ElapsedTime"
         }
