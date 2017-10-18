@@ -1,4 +1,4 @@
-function Scan-OVA {    
+function Scan-OVA {     
     <#
     .SYNOPSIS
         This script is used to scan uncompressed OVA/OVF file(s) against the included manifest (SHA1 or SHA256).
@@ -134,7 +134,7 @@ function Scan-OVA {
             #Test for file
             if(Test-Path $VerifyPath) {
 	    
-		$FileSize = ((Get-ItemProperty -Path $VerifyPath).Length / 1GB)    
+		$FileSize = "{0:N2}" -f ((Get-ItemProperty -Path $VerifyPath).Length / 1GB)    
 	        $Check = Get-FileHash -Path $VerifyPath -Algorithm $Alg -ErrorAction SilentlyContinue
 
                 #Check hash matching
