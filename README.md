@@ -18,6 +18,7 @@ This script will parse the included manifest file in the path provided and use t
 What's new in the branch:
 
 -Gui File Picker if no Path paramter specificed
+
 -Combined 2 old scripts into 1, added Recursive functionality based on parameters
 
 
