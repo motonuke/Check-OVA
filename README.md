@@ -1,4 +1,4 @@
-# Check-OVA
+# Check-OVF
 
 This script will check a decompressed OVF for file integrity. This only works on OVF files (which are uncompressed OVA files).
 
