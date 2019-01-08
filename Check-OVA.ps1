@@ -1,15 +1,3 @@
-######################################################################
-## 																	##
-## This script is used to check an uncompressed OVA/OVF set of 	   	##
-## 	files against the included manifest (SHA1 or SHA256)			##
-##																	##
-## Created by - Motonuke - 2017-Aug-11							##
-## Updated 2017-Oct-11 - Added Recursive option						##
-## Updated 2018-Dec-04 - Combined 2 scripts into 1, 				##
-##							added gui file picker					##
-##																	##
-######################################################################
-
 
 ## Setting environment
 [CmdletBinding()]
@@ -67,7 +55,6 @@ switch ($Recurse) {
 			$mffiles = get-content $path"*.mf" -erroraction silentlycontinue
 			}
 }
-# $mffiles = get-childitem -path $path"*.mf" -Recurse -erroraction silentlycontinue
 if ($mffiles -lt 1) {write-host "`nNo manifest files found, please check your settings and that you're using extracted OVF files.`n`nI was looking in $path`n" -f yellow;exit}
 
 ## Start loop for all found manifest files
