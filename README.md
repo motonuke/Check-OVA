@@ -3,6 +3,7 @@
 This script will check a decompressed OVF for file integrity. This only works on OVF files (which are uncompressed OVA files).
 
 Usage: 		.\check-ovf.ps1 -Recurse "Yes|No" -Path(optional) "Folder"
+
 Example: 	.\check-ovf.ps1 -Recurse Yes -Path ".\MY_OVA_COLLECTION\OVA FOLDER"
 
 *** If a path is not specifed, you will be promted to pick a starting folder ***
