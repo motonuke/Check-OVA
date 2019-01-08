@@ -20,7 +20,7 @@ Function Get-FilePath
 {
     [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
     $OpenFileDialog = New-Object System.Windows.Forms.FolderBrowserDialog
-	$OpenFileDialog.Description = "Choose a base folder to search for Manifest (.mf) Files"
+    $OpenFileDialog.Description = "Choose a base folder to search for Manifest (.mf) Files"
     $OpenFileDialog.ShowDialog() | Out-Null
     Return $OpenFileDialog.SelectedPath
 }
