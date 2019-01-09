@@ -8,7 +8,7 @@ Example: 	.\check-ovf.ps1 -Recurse Yes -Path ".\MY_OVA_COLLECTION\OVA FOLDER"
 
 *** If a path is not specifed, you will be promted to pick a starting folder ***
 
-*** The Recurse option will search the specified root folder and all subfolders for MF and OVF files and check them againsts the stored hashes ***
+*** The Recurse option will search the specified root folder and all subfolders for MF and OVF files and check them against the stored hashes ***
 
 *** Note - This script can take several minutes to run, depending on file size ***
 
